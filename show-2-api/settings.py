@@ -87,7 +87,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # whitenoise static middleware
+    # whitenoise static middleware,
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
