@@ -46,8 +46,8 @@ class ShowDetail(generics.RetrieveUpdateDestroyAPIView):
         # Locate the show to show
         show = get_object_or_404(Show, pk=pk)
         # Only want to show owned shows?
-        if not request.user.id == show.owner.id:
-            raise PermissionDenied('Unauthorized, you do not own this show')
+        # if not request.user.id == show.owner.id:
+        #     raise PermissionDenied('Unauthorized, you do not own this show')
 
         # Run the data through the serializer so it's formatted
         data = ShowSerializer(show).data
